@@ -1,0 +1,62 @@
+/*
+Write your variables here. All available variables can be
+found in https://github.com/view-design/ViewUI/blob/master/src/styles/custom.less
+*/
+
+@import "~view-design/src/styles/index.less";
+
+// Here are the variables to cover, such as:
+@primary-color: #2d8cf0;
+
+// @layout-header-background: rgba(0, 11, 150, 1);
+
+// @menu-dark-title: rgba(0, 10, 36, 1);
+// @menu-dark-active-bg: rgba(0, 10, 36, 1);
+@layout-header-background: #191a23;
+
+@menu-dark-title: #20222a;
+@menu-dark-active-bg: #111324;
+
+// 滚动条美化
+/* Document scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+// 页面动画
+.ivu-card-body div {
+  animation: moveTop 1s;
+  -webkit-animation: moveTop 1s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+}
+
+@keyframes moveTop {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+// 侧边栏选中颜色
+.ivu-menu-dark.ivu-menu-vertical .ivu-menu-submenu .ivu-menu-item-active,
+.ivu-menu-dark.ivu-menu-vertical .ivu-menu-submenu .ivu-menu-item-active:hover {
+  // background: rgba(37, 56, 121, 1) !important;
+  background: rgba(63, 64, 69, 0.75) !important;
+}
