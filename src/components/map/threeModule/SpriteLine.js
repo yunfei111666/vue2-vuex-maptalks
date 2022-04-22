@@ -1,5 +1,5 @@
 /*
- * @Author: JackFly
+ * @Author: yunfei
  * @since: 2020-09-21 16:49:51
  * @lastTime: 2020-09-29 10:48:22
  * @FilePath: /TrunkOS-3D/src/components/threeModule/SpriteLine.js
